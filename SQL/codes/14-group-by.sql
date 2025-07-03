@@ -49,7 +49,7 @@ FROM sales
 GROUP BY sales_rep, DATE_FORMAT(order_date, '%Y-%m')
 ORDER BY 월, 월매출액 DESC;
 
--- MAU 측정
+-- MAU (Monthly Active Users) 측정
 SELECT
 	DATE_FORMAT(order_date, '%Y-%m') AS 월,
     COUNT(*) AS 주문건수,

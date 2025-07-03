@@ -44,3 +44,6 @@ GROUP BY sales_rep
 HAVING 월평균매출 >= 5 * power(10, 5)
 ORDER BY 월평균매출 DESC;
 -- ORDER BY ??;
+
+SELECT * FROM sales
+WHERE total_amount > 1000 AND quantity > 3;
